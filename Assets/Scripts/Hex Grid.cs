@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HexGrid : MonoBehaviour
+{
+    [field: SerializeField] public HexOrientation Orientation { get; private set; }
+    [field: SerializeField] public int Width { get; private set; }
+    [field: SerializeField] public int Height { get; private set; }
+    [field: SerializeField] public int HexSize { get; private set; }
+    [field: SerializeField] public GameObject HexPrefab { get; private set; }
+
+    //private void OnDrawGizmos()
+    //{
+    //    for (int z = 0; z< Height; z++)
+    //    {
+    //        for(int x = 0; x < Width; x++)
+    //        {
+    //            Vector3 centrePosition = HexMetrics.
+    //        }
+    //    }
+    //}
+}
