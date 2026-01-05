@@ -35,9 +35,21 @@ public static class HexMetrics
         }
         return corners;
     }
-    //public static Vector3 Center(float hexSize, int x, int z, HexOrientation orientation)
-    //{
-    //    Vector3 centrePosition;
-    //    if (orientation == HexOrientation)
-    //}
+    public static Vector3 Center(float hexSize, int x, int z, HexOrientation orientation)
+    {
+        Vector3 centrePosition;
+        if (orientation == HexOrientation.PointyTop)
+        {
+            centrePosition.x = (x + z * 0.5f - z / 2) * (InnerRadius(hexSize) * 2f);
+            centrePosition.y = 0f;
+            centrePosition.z = (z) * (OuterRadius(hexSize) * 1.5f);
+        }
+        else
+        {
+            centrePosition.x = (x) * (OuterRadius(hexSize) * 1.5f);
+            centrePosition.y = 0f;
+            centrePosition.z = (z + x * 0.5f - x / 2) * (InnerRadius(hexSize) * 2f);
+        }
+            return centrePosition;
+    }
 }

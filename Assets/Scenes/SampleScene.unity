@@ -152,10 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2631e3ba009b3439e07b80a8ecae3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Orientation>k__BackingField: 0
-  <Width>k__BackingField: 0
-  <Height>k__BackingField: 0
-  <HexSize>k__BackingField: 0
+  <Orientation>k__BackingField: 1
+  <Width>k__BackingField: 37
+  <Height>k__BackingField: 51
+  <HexSize>k__BackingField: 7
   <HexPrefab>k__BackingField: {fileID: 0}
 --- !u!4 &69739484
 Transform:
